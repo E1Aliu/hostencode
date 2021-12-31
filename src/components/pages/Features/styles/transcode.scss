@@ -1,0 +1,129 @@
+h5 {
+    text-align: center;
+    margin-top:2%;
+    color: #0000ff;
+}
+h1{
+    text-align: center;
+    margin-top:1%;
+}
+.bgc{
+    background-image: linear-gradient(to left top,#ffffff, rgb(172, 107, 172));
+    // padding-bottom: 13%;
+
+}
+.quality{
+    display: flex;
+    margin-top:2%;
+    // background-image: linear-gradient(to right,#ffffff, rgb(172, 107, 172));
+    // z-index: -1;
+
+    .FirstQuality{
+        width: 40%;
+        // border: 2px solid blue;
+        text-align: right;
+        height: 16em;
+        // z-index: 3;
+        background-image: linear-gradient(to right bottom,#ffffff, rgb(219, 196, 219));
+
+        h4 {
+            // color: red;
+            padding-bottom: 3%;
+            padding-right:  4%;
+            // padding-top:30%;
+        }
+        // .res{
+        //     padding-top:26%;
+        // }
+    }
+    
+    .SecondQuality{
+        width: 60%;
+        height: 78%;
+        // border: 2px solid blue;
+        background-image: linear-gradient(to right,#ffffff, rgb(156, 95, 156));
+        z-index: 2;
+    }
+    .ThirdQuality{
+        width: 60%;
+        height: 70%;
+        // border: 2px solid red;
+        background-image: linear-gradient(to right,#ffffff, rgb(211, 135, 211));
+        
+    }
+    .resolution{
+        padding-top: 40%;
+    }
+}
+.Description{
+    width: 50%;
+    text-align: left;
+    padding-left: 8%;
+    h2{text-align: left;
+        margin-top:5%;
+        font-size: 1.7em;
+        // color: #0000ff;
+
+
+    }
+    h6{
+        text-align: left;
+        margin-top: 4%;
+        font-size: 1em;
+    }
+    .Btn{
+        margin-top: 4%;
+        justify-content: center;
+    }
+    .More{
+        width: fit-content;
+        border:2px solid #000000;
+        border-radius: 40px;
+        height: 3em;
+        background-color: rgba(255, 255, 255, 0);
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        padding:auto;
+    }
+    h4{
+        margin-top: 60%;
+        margin-bottom: 7%;
+        text-align: right;
+        padding-right: 5%;
+        font-size: 2em;
+        // padding-bottom: 5%;
+        color: #800080;
+        // margin-bottom: 10%;
+    }
+}
+@media(max-width:1310px){
+    .More{
+        width: 40%;
+        padding:10px;
+        
+    }
+    
+}
+@media(max-width:630px){
+    .quality{
+        display: flex;
+        flex-wrap: wrap;
+        .FirstQuality{
+            width: 100%;
+        }
+    }
+    .Description{
+        width: 100%;
+        h4{
+            margin-top: 30%;
+            margin-bottom: 7%;
+            text-align: right;
+            padding-right: 5%;
+        }
+    }
+    
+    
+    
+    
+}

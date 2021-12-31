@@ -1,0 +1,120 @@
+.home-page{
+    overflow: hidden;
+}
+.home-page .banner{
+    position: relative;
+    width: 100%;
+    padding-bottom:12.5%;
+    .img{
+        position: absolute;
+        left:0;
+        right: 0;
+        bottom:0;
+        margin-left: auto;
+        margin-right: auto;
+        content: url('../../../../assets/Home/banner-img.png');
+        height: 52.5%;
+    }
+    .inner-banner{
+        position: relative;
+        color:#fff;
+        text-align: center;
+        padding:10% 7.5% 20%;
+    }
+    .bg{
+        content: url('../../../../assets/Home/banner.png');
+        z-index: -1;
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        min-width: 100%;
+    }
+    h1{
+        color:#fff;
+        font-size: max(22.5px, 2.35vw);
+        width: 47.5%;
+        margin:0 auto;
+        line-height: 1.25;
+    }
+    p{
+        font-size: max(16px, 1.1vw);
+        width: 45%;
+        margin:max(15px, 1.1vw) auto max(25px, 1.7vw);
+        color:#ddd;
+        line-height: 1.6;
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        a{
+            margin: max(7.5px, 0.55vw)  max(10px, 0.7vw);
+        }
+    }
+    .link2{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        padding:max(11.5px, 0.85vw) max(25px, 1.65vw);
+        color:#fff;
+        font-size: max(15px, 0.95vw);
+        border-radius: max(25px, 1.5vw);
+        border:1px solid #fff;
+        transition: 0.65s ease-in-out;
+        &:hover{
+            box-shadow: 300px 0 0 0  rgba(0,0,0,0.25) inset, -300px 0 0 0  rgba(0,0,0,0.25) inset;
+        }
+    }
+}
+
+@media(max-width:1475px){
+    .home-page .banner{
+        padding-bottom:12.5%;
+        .img{
+            height: 45%;
+        }
+        .inner-banner{
+            padding:11% 7.5% 17.5%;
+        }
+        p{
+            width: 50%;
+        }
+       
+    }
+    
+}
+
+@media(max-width:1100px){
+    .home-page .banner{
+        padding-bottom:0;
+        .img{
+            position: relative;
+            left:unset;
+            right: unset;
+            bottom:unset;
+            height: unset;
+            width: 400px;
+            max-width: 95%;
+            margin:0 auto;
+        }
+        .inner-banner{
+            padding:150px 6% 25px;
+        }
+        .bg{
+            height: 135%;
+        }
+        h1{
+            width: 100%;
+        }
+        p{
+            width: 100%;  
+        }
+        .links{
+            a{
+                margin: 7.5px;
+            }
+        }
+    }
+}

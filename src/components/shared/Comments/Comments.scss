@@ -1,0 +1,190 @@
+.shared-what-others-say{
+    margin:7.5% 0 5%;
+    padding:0 20%;
+    h5{
+        color:#438DEE;
+        font-size: max(15px, 0.95vw);
+        letter-spacing: 2px;
+        margin:0 6%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h1{
+        color:#2C1B58;
+        line-height: 1.4;
+        text-align: center;
+        width: 57.5%;
+        font-size: max(22.5px, 1.75vw);
+        margin:max(10px,0.5vw) auto max(30px, 2.25vw);
+    }
+    .link-container{
+        display: flex;
+        justify-content: center;
+        margin-top: max(30px, 2.25vw);
+    }
+}
+.shared-what-others-say .tab-panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .panel-button{
+        border:2px solid #4361EE;
+        color:#4361EE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
+        background: none;
+    }
+    .inner-tab-panels{
+        border:1px solid #f3f3f3;
+        box-shadow: rgba(50, 50, 93, 0.15) 0px 3px 6px -1.5px, rgba(0, 0, 0, 0.15) 0px 1.5px 4px -1.5px;
+        width: 70%;
+        padding:max(40px, 3.25vw);
+        border-radius: max(12.5px, 1vw);
+    }
+    .react-tabs__tab-panel{
+        text-align: center;
+    }
+    h2{
+        font-size: max(17px,1.25vw);
+    }
+    p{
+        font-size: max(15.5px,1vw);
+        line-height: 1.6;
+        margin:max(20px, 1.5vw) 0;
+        color:#4E4468;
+    }
+    .stars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            color:#FFB719;
+            font-size: max(20px, 1.5vw);
+        }
+    }
+}
+
+.shared-what-others-say .react-tabs__tab-list{
+    margin: max(30px, 2.25vw) auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    .react-tabs__tab{
+        width: 19%;
+        text-align: center;
+        cursor: pointer;
+        .profile{
+            width: 50%;
+            margin:0 auto;
+            opacity: 0.6;
+        }
+        h6{
+            font-size: max(15px, 1vw);
+            margin-top: max(10px,0.8vw);
+            opacity: 0;
+        }
+    }
+    .react-tabs__tab--selected{
+        .profile{
+            width: 65%;
+            opacity: 1;
+        }
+        h6{
+            opacity: 1;
+        }
+    }
+}
+
+@media(max-width:1475px){
+    .shared-what-others-say{
+        padding:0 17.5%;
+    }
+    .shared-what-others-say .tab-panel{
+        .panel-button{
+            width: 37.5px;
+            height: 37.5px;
+            font-size: 27.5px;
+        }
+        .inner-tab-panels{
+            box-shadow: rgba(50, 50, 93, 0.1) 0px 1.5px 4px -1.5px, rgba(0, 0, 0, 0.1) 0px 1.5px 3px -1.5px;
+            width: 80%;
+        }
+    }
+    
+}
+
+@media(max-width:1050px){
+    .shared-what-others-say .react-tabs__tab-list{
+        width: 100%;
+    }
+}
+
+@media(max-width:900px){
+    .shared-what-others-say{
+        margin:45px 0;
+        padding:0 2%;
+        h5{
+            margin:0;
+        }
+        h1{
+            width: 100%;
+            margin:7.5px auto 25px;
+        }
+        .link-container{
+            margin-top: 10px;
+        }
+    }
+    .shared-what-others-say .tab-panel{
+        .panel-button{
+            width: 30px;
+            height: 30px;
+            font-size: 25px;
+            border:1px solid #4361EE;
+        }
+        .inner-tab-panels{
+            flex:1;
+            width: unset;
+            margin:0 10px;
+            padding:20px;
+            border-radius: 10px;
+        }
+        h2{
+            font-size: 16px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.5;
+            margin:17.5px 0;
+        }
+        .stars{
+            svg{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    .shared-what-others-say .react-tabs__tab-list{
+        margin: 25px auto 0;
+        width: 100%;
+        justify-content: center;
+        .react-tabs__tab{
+            margin:5px 7px;
+            width: 90px;
+
+            .profile{
+                width: 55%;
+            }
+            h6{
+                font-size: 14px;
+                margin-top: 8px;
+            }
+        }
+    }
+}

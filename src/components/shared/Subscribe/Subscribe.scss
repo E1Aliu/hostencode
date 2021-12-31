@@ -1,0 +1,73 @@
+.shared-subscribe-component{
+    margin-top: 5%;
+    background: linear-gradient(90deg,rgba(104, 149, 255, 0.95), rgba(157, 0, 162, 0.95)), url('../../../assets/shared/letsTalk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    padding:3.5% 5%;
+    h1{
+        font-size: max(27.5px, 2vw); 
+        text-align: center;
+        margin-bottom: max(35px, 2.2vw);
+    }
+    .email-container{
+        width: 45%;
+        margin:0 auto;
+        background: linear-gradient(rgba(102554, 242559, 255, 0.35), rgba(255, 255, 255, 0.35));
+        display: flex;
+        align-items: center;
+        padding:max(2.5px, 0.25vw) max(2.5px, 0.25vw) max(2.5px, 0.25vw) max(15px, 1.25vw);
+        border-radius: max(22px, 2vw);
+    }
+    span{
+        color:#fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: max(17px, 1.25vw);
+    }
+    input{
+        background: none;
+        flex: 1;
+        color:#fff;
+        border:0;
+        font-size: max(14px, 0.9vw);
+        height: max(37px, 2.5vw);
+        margin:0 max(5px, 0.3vw);
+        padding:0 max(5px, 0.3vw);
+        &::placeholder{
+            color:#fff;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        height: max(37px, 2.5vw);
+        width: max(37px, 2.5vw);
+        border-radius: 50%;
+        background: #4361EE;
+        color:#fff;
+        border:0;
+        font-size: max(20px, 1.5vw);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+}
+
+@media(max-width:1050px){
+    .shared-subscribe-component{
+        padding:55px 3.5%;
+        h1{
+            margin-bottom: 25px;
+        }
+        .email-container{
+            width: 400px;
+            max-width: 100%;
+        }
+    }
+}

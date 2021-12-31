@@ -1,0 +1,193 @@
+.nav .nav-megamenu{
+    position: absolute;
+    background: #fff;;
+    top:4.8vw;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    border:1px solid #f3f3f3;
+    justify-content: space-between;
+    width: 1150px;
+}
+.nav .nav-megamenu .left{
+    width: 75%;
+    padding:25px 30px 25px 40px;
+    h5{
+        color:#438DEE;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 17.5px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .main-links{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .megamenu-link{
+        display: flex;
+        align-items: center;
+        width: 47%;
+        margin:20px 0;
+        &:hover{
+            .icon-container{
+                background: #438DEE;
+                border:1px solid #438DEE;
+                svg{
+                    filter: brightness(10);
+                    -webkit-filter: brightness(10);
+                }
+            }
+            h6{
+                color:#438DEE;
+            }
+        }
+    }
+    .icon-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:1px solid #ddd;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        margin-right: 17.5px;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .block{
+        flex: 1;
+        h6{
+            font-size: 16.5px;
+            font-weight: normal;
+            color:#2C1B58;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 15.5px;
+            color:#777;
+            line-height: 1.5;
+        }
+    }
+}
+
+.nav .nav-megamenu .right{
+    width: 25%;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #f9f9f9;
+    h4{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: normal;
+        color:#282157;
+        margin-bottom: 10px;
+    }
+    .links2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        a{
+            font-size: 15.5px;
+            color:#777;
+            margin:5px 0;
+        }
+    }
+    .hover-button{
+        padding:12px 27.5px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+}
+
+.nav .features-megamenu{
+    left: -245px;
+}
+
+.nav .products-megamenu{
+    left: -350px;
+    .megamenu-link{
+        margin:25px 0 !important;
+    }
+}
+.nav .about-megamenu{
+    left: -550px;
+}
+.nav .support-megamenu{
+    left: -700px;
+}
+@media(max-width:1475px){
+    .nav .nav-megamenu{
+        border-radius: 7.5px;
+        width: 900px;
+    }
+    .nav .nav-megamenu .left{
+        padding:20px 15px 20px 25px;
+        h5{
+            font-size: 15px;
+        }
+        .megamenu-link{
+            width: 47.5%;
+            margin:15px 0;
+        }
+        .icon-container{
+            width: 45px;
+            height: 45px;
+            margin-right: 15px;
+            svg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .block{
+            h6{
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 12.5px;
+            }
+        }
+    }
+    
+    .nav .nav-megamenu .right{
+        padding:25px;
+        h4{
+            font-size: 15px;
+        }
+        .links2{
+            margin-bottom: 15px;
+    
+            a{
+                font-size: 13.5px;
+            }
+        }
+        .hover-button{
+            padding:10px 25px;
+            font-size: 14px;
+            border-radius: 20px;
+        }
+    }
+    
+    .nav .features-megamenu{
+        left: -220px;
+    }
+    .nav .products-megamenu{
+        left: -300px;
+        .megamenu-link{
+            margin:20px 0 !important;
+        }
+    }
+    .nav .about-megamenu{
+        left: -500px;
+    }
+    .nav .support-megamenu{
+        left: -600px;
+    }
+}

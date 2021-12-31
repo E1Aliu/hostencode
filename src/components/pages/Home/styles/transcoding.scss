@@ -1,0 +1,94 @@
+.home-page .transcoding-component{
+    margin:7.5% 0 5%;
+    padding:0 0 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .info{
+        width: 35%;
+    }
+    .images{
+        width:60%;
+        border: 1px solid #f5f5f5;
+        padding:2.5% 5%;
+        position: relative;
+        border-radius: 15vw 0 0 15vw;
+        box-shadow: rgba(50, 50, 93, 0.1) 0px 3px 6px -2px, rgba(0, 0, 0, 0.05) 0px 2px 4px -3px;
+    }
+    h5{
+        color:#438DEE;
+        font-size: max(15px, 0.95vw);
+        letter-spacing: 2px;
+    }
+    h1{
+        color:#2C1B58;
+        line-height: 1.4;
+        font-size: max(22.5px, 1.75vw);
+        margin:max(5px,0.35vw) 0 max(15px, 1vw);
+    }
+    p{
+        line-height: 1.7;
+        font-size: max(15px, 1vw);
+        margin-bottom: max(20px, 1.5vw);
+        color:#4E4468;
+    }
+    
+    .img{
+        width: 85%;
+        content: url('../../../../assets/Home/img1.png');
+        position: relative;
+        z-index: 2;
+    }
+    .cloud{
+        opacity: 0.35;
+        filter: blur(30px);
+        -webkit-filter: blur(30px);
+        position: absolute;
+        top:-15%;
+        font-size: 36vw;
+    }
+    .cloud1{
+        color:#8143EE;
+        left:0;
+    }
+    .cloud2{
+        color: #4361EE;
+        right: 0;
+    }
+}
+
+@media(max-width:1025px){
+    .home-page .transcoding-component{
+        margin:25px 0;
+        padding:0;
+        .info{
+            width: 90%;
+            margin:20px auto;
+        }
+        .images{
+            margin:20px auto;
+            width:100%;
+        }
+        .cloud{
+            font-size: 70vw;
+            filter: blur(20px);
+            -webkit-filter: blur(20px);
+        }
+    }
+}
+@media(max-width:450px){
+    .home-page .transcoding-component{
+        .images{
+            padding:25px 15px;
+            border-radius: 100px 0 0 100px;
+        }
+        .img{
+            width: 92.5%;
+        }
+        .cloud{
+            top:-5%;
+            font-size: 77.5vw;
+        }
+    }
+}

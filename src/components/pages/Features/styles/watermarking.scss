@@ -1,0 +1,51 @@
+.marking{
+    display: flex;
+    .photo{
+        width: 60%;
+    }
+    .Description{
+        h4 {
+            text-align: left;
+            color: black;
+        }
+        h1{
+            text-align: left;
+        }
+        p{
+            font-size: 1.4em;
+            margin: 2%;
+        }
+        button {
+            width: 25%;
+            height: 3em;
+            margin: 5%;
+            border-radius: 30px;
+        }
+    }
+}
+.Audio {
+    display: flex;
+    .Description{
+        h4{
+            text-align: left;
+            color: black;
+        }
+        h1{
+            text-align: left;
+            margin: 2%;
+        }
+        p{
+            text-align: left;
+            margin: 2%;
+        }
+        button {
+            width: 25%;
+            height: 3em;
+            margin: 5%;
+            border-radius: 30px;
+        }
+    }
+    .photoo{
+        width: 70%;
+    }
+}

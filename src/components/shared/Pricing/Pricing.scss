@@ -1,0 +1,171 @@
+.shared-pricing-scales{
+    margin:5% 0 max(35px, 3vw);
+    padding:0 7.5%;
+    h5{
+        color:#438DEE;
+        font-size: max(15px, 0.95vw);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    h1{
+        color:#2C1B58;
+        line-height: 1.4;
+        font-size: max(22.5px, 1.75vw);
+        margin:max(5px,0.25vw) 0 max(10px, 0.65vw);
+        text-align: center;
+
+    }
+    .p{
+        font-size: max(15px, 1vw);
+        margin:0 0 max(30px, 2.5vw);
+        color:#707070;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+.shared-pricing-scales .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card{
+        width: 23%;
+        border:1px solid #eee;
+        box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2.75px;
+        border-radius: max(10px, 0.7vw);
+        padding:max(20px, 2.4vw);
+        @media(max-width:1475px){
+            box-shadow: rgba(0, 0, 0, 0.05) 1.5px 1.5px 2.2px;
+        }
+    }
+    h2{
+        text-align: center;
+        color:#6895FF;
+        font-size: max(20px, 1.5vw);
+    }
+    h3{
+        color: #2C1B58;
+        font-size: max(22.5px, 1.75vw);
+        text-align: center;
+        margin:max(15px, 1vw) 0 max(7.5px, 0.35vw);
+    }
+    .month{
+        text-align: center;
+        font-size: max(14px, 0.9vw);
+        color:#414141;
+        margin-bottom: max(20px, 1.25vw);
+    }
+    a{
+        background: #EEEEEE;
+        color:#1E1C24;
+        font-size: max(14px, 1vw);
+        padding:max(9px, 0.6vw) max(20px, 1.5vw);
+        border-radius: max(22.5px, 1.35vw);
+        margin:0 auto;
+        width: fit-content;
+        display: flex;
+    }
+    p{
+        text-align: center;
+        color:#414141;
+        line-height: 1.5;
+        font-size: max(14px, 0.9vw);
+        margin: max(20px, 1.25vw) 0;
+    }
+    .line{
+        width: 80%;
+        margin:0 auto;
+        height: 2px;
+        border-top: 1px solid #BBBBBB;
+    }
+    h4{
+        margin: max(20px, 1.25vw) 0;
+        font-size: max(15px, 0.9vw);
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        margin:max(10px, 0.9vw) 0;
+        span{
+            font-size: max(13px, 0.8vw);
+            color:#414141;
+        }
+    }
+    .icon{
+        width: max(17px, 1vw);
+        margin-right: max(10px, 0.6vw);
+    }
+}
+
+@media(max-width:1475px){
+    .shared-pricing-scales{
+        padding:0 5%;
+    }
+}
+
+@media(max-width:1200px){
+    .shared-pricing-scales{
+        .p{
+            margin-bottom: 0;
+        }
+        .cards{
+            justify-content: center;
+        }
+        .card{
+            width: 375px !important;
+            max-width:45%;
+            margin:20px 2.5%;
+        }
+    }
+}
+
+@media(max-width:625px){
+    .shared-pricing-scales{
+        margin:45px 0 20px;
+        .card{
+            width: 325px !important;
+            max-width:100%;
+            margin:20px auto;
+        }
+    }
+}
+
+.shared-pricing-scales{
+    .card{
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-12.5px);
+            -webkit-transform: translateY(-12.5px);
+            @media(max-width:625px){
+                transform: translateY(0);
+                -webkit-transform: translateY(0);
+            }
+        }
+    }
+    .card:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 51%;
+        right: 51%;
+        bottom: 0;
+        background: linear-gradient(90deg, #9D00A2,#438DEE);
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+    .card:hover:before, .card:focus:before, .card:active:before {
+        left: 0;
+        right: 0;
+    }
+}
