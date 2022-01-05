@@ -6,6 +6,7 @@
     margin:10% 0;
     .info{
         width: 35%;
+        text-align: left;
     }
     .images{
         width:60%;
@@ -19,12 +20,14 @@
         color:#438DEE;
         font-size: max(15px, 0.95vw);
         letter-spacing: 2px;
+        text-align: left;
     }
     h1{
         color:#2C1B58;
         line-height: 1.4;
         font-size: max(22.5px, 1.75vw);
         margin:max(5px,0.35vw) 0 max(15px, 1vw);
+        text-align: left;
     }
     h6{
         color:#4E4468;

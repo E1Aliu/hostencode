@@ -7,6 +7,7 @@ import Watermarking from '../../components/pages/Features/Watermarking'
 import HLS from '../../components/pages/Features/HLS'
 import Customize from '../../components/pages/Features/Customize'
 import UserExperience from "../../components/pages/Features/UserExperience"
+import Screns from "../../components/pages/Features/Screns"
 import HostCloud from '../../components/shared/HostCloud/HostCloud'
 import Pricing from '../../components/shared/Pricing/Pricing'
 import LetsTalk from '../../components/shared/LetsTalk/LetsTalk'
@@ -18,13 +19,14 @@ const Features=()=>{
     return (
         <div className='ADS'>
             <Navbar />
-             <Banner />
+             {/* <Banner /> */}
              <Transcode />
              <EditVideos/>
              <Watermarking/>
              <HLS/>
              <Customize/>
             <UserExperience/>
+            <Screns/>
             <HostCloud />
             <Pricing />
             <LetsTalk />

@@ -1,12 +1,41 @@
+.user{
+    margin-top: 5%;
+}
 .VideoPlayer{
     display: flex;
     .img{
         width: 90%;
+        display: flex;
+        position: relative;
+        border: 1px solid #ffffff;
+        border-radius: 0 15vw 15vw 0;
+        box-shadow: rgba(50, 50, 93, 0.1) 0px 3px 6px -2px, rgba(0, 0, 0, 0.05) 0px 2px 4px -3px;
+    }
+    .img1{
+        content: url('../../../../assets/Features/Tree.png');
+        // position: absolute;
+        z-index: 2;
+    }
+    .img2{
+        content: url('../../../../assets/Features/Room.png');
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+    }
+    h3{
+        margin-top: 15%;
+        padding-left: 12%;
+    }
+    .capDes{
+        margin-top: 5%;
+        padding-left: 12%;
+        
     }
     h1{
         text-align: left;
         letter-spacing: 1px;
         margin-right: 15%;
+        padding-left: 4%;
     }
     h5{
         color: #000000;
@@ -14,18 +43,22 @@
         font-size: 1em;
         margin-right: 15%;
         margin-top: 3%;
+        padding-left: 4%;
     }
     h2{
         text-align: left;
         margin-top: 3%;
         margin-right: 15%;
         font-size: 1.5em;
+        padding-left: 4%;
     }
     p{
         margin-top: 3% ;
+        padding-left: 4%;
     }
     .links{
         margin-top: 8%;
+        padding-left: 4%;   
         a{
             border:2px solid #000000;
             margin: 4%;
@@ -35,22 +68,196 @@
             color: #000000;
         }
     }
+    .cloud{
+        opacity: 0.35;
+        filter: blur(30px);
+        -webkit-filter: blur(30px);
+        position: absolute;
+        top:-15%;
+        font-size: 36vw;
+    }
+    .cloud1{
+        color:#8143EE;
+        left:0;
+    }
+    .cloud2{
+        color: #4361EE;
+        right: 0;
+    }
+    
 }
-.GIF{
-    .description{
+// .GIF{
+//     display: flex;
+//     margin-top: 2%;
+//     .description{
+//         padding-left: 5%;
+//         h1{
+//             text-align:left;
+//             margin:2%;
+//         }
+//         h5{
+//             text-align:left;
+//             margin-top: 5%;
+//             margin-bottom: 5%;
+//             font-size: 1.2em;
+//         }
+//     }
+//     .row{
+//         display:flex;
+//         margin: 4%;
+//     }
+
+//     .img{
+//         // width:90%;
+//         content: url('../../../../assets/Features/fam.png');
+//     }
+//     .links{
+//         margin-top: 8%;
+//         padding-left: 4%;   
+//         a{
+//             border:2px solid #000000;
+//             margin: 4%;
+//             padding:1.2%;
+//             border-radius: 2em;
+//             width:fit-content;
+//             color: #000000;
+//             &:hover{
+//                 background-color: rgb(49, 49, 165);
+//             }
+//         }
+//     }
+//     .gif-img{
+//         display: flex;
+//         position: relative;
+//         justify-content: center;
+//         border:4px solid #ffffff;
+//         border-top-left-radius: 4em;
+//         border-bottom-left-radius: 4em;
+//         box-shadow: rgba(50, 50, 93, 0.1) 0px 3px 6px -2px, rgba(0, 0, 0, 0.05) 0px 2px 4px -3px;
+//         h3{
+//             margin-top: 45%;
+//         }
+//         p{
+//             margin-top: 5%;
+//         }
+//     }
+//     .cloud{
+//         opacity: 0.35;
+//         filter: blur(30px);
+//         -webkit-filter: blur(30px);
+//         position: absolute;
+//         top:-15%;
+//         font-size: 36vw;
+//     }
+//     .cloud1{
+//         color:#8143EE;
+//         left:0;
+//     }
+//     .cloud2{
+//         color: #4361EE;
+//         right: 0;
+//     }
+// }
+@media (max-width:1260px) {
+    .user{
+        margin: 2%;
+    }
+  .VideoPlayer{
+      display: flex;
+    //   flex-wrap: wrap;
+      .img{
+          width: 60%;
+      }
+      .img1{
+          width: 26%;
+          height: 100%;
+      }
+      .img2{
+           width: 60%;
+      }
+    }
+    .Info{
+        width: 35%;
+    }
+  }
+  @media (max-width:1035px){
+      .VideoPlayer{
+          display: flex;
+          flex-wrap: wrap;
+          .img{
+              width: 80%;
+              margin: 0 auto;
+          }
+          .Info{
+              width: 80%;
+              margin: 0 auto;
+          }
+          h3{
+            margin-top: 5%;
+            padding-left: 5%;
+        }
+        .capDes{
+            margin-top: 2%;
+            padding-left: 5%;
+            
+        }
+      }
+      h1{
+        text-align: left;
+        letter-spacing: 1px;
+        margin-right: 15%;
+        padding-left: 4%;
+    }
+    h5{
+        font-size: 1em;
+        margin-right: 15%;
+        margin-top: 1%;
+        padding-left: 4%;
+    }
+    h2{
+        margin-top: 2%;
+        margin-right: 15%;
+        padding-left: 4%;
+    }
+    p{
+        margin-top: 1% ;
+        padding-left: 4%;
+    }
+    
+
+  }
+  @media (max-width:400px){
+    .VideoPlayer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 8%;
+        .img{
+            width: 100%;
+        }
+        .capDes{
+            margin-top: 1%;
+            padding-left: 1%;
+            font-size: 0.9em;
+            
+        }
+    }
+    .Info{
+        width: 100%;
+        margin: 0;
         h1{
-            text-align:left;
-            margin:2%;
+            font-size: 1.2em;
+            margin: 0;
+            margin-top:2%;
+            padding:0;
+            text-align: left;
         }
         h5{
-            text-align:left;
+            font-size: 0.9em;
+            margin: 0;
+            margin-top:2%;
+            padding:0;
+            text-align: left;
         }
     }
-    .row{
-        display:flex;
-    }
 
-    .img{
-        width:90%;
-    }
 }

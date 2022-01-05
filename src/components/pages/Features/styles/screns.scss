@@ -1,0 +1,88 @@
+.GIF{
+    display: flex;
+    margin-top: 2%;
+    .description{
+        padding-left: 5%;
+        h1{
+            text-align:left;
+            margin:2%;
+        }
+        h5{
+            text-align:left;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: 1.2em;
+        }
+    }
+    .row{
+        display:flex;
+        margin: 4%;
+    }
+
+    .img{
+        // width:90%;
+        content: url('../../../../assets/Features/fam.png');
+    }
+    .links{
+        margin-top: 8%;
+        padding-left: 4%;   
+        a{
+            border:2px solid #000000;
+            margin: 4%;
+            padding:1.2%;
+            border-radius: 2em;
+            width:fit-content;
+            color: #000000;
+            &:hover{
+                background-color: rgb(49, 49, 165);
+            }
+        }
+    }
+    .gif-img{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        border:4px solid #ffffff;
+        border-top-left-radius: 4em;
+        border-bottom-left-radius: 4em;
+        box-shadow: rgba(50, 50, 93, 0.1) 0px 3px 6px -2px, rgba(0, 0, 0, 0.05) 0px 2px 4px -3px;
+        h3{
+            margin-top: 45%;
+        }
+        p{
+            margin-top: 5%;
+        }
+    }
+    .cloud{
+        opacity: 0.35;
+        filter: blur(30px);
+        -webkit-filter: blur(30px);
+        position: absolute;
+        top:-15%;
+        font-size: 36vw;
+    }
+    .cloud1{
+        color:#8143EE;
+        left:0;
+    }
+    .cloud2{
+        color: #4361EE;
+        right: 0;
+    }
+}
+@media (max-width:1000px) {
+    .GIF{
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-around;
+        .description {
+            width: 60%;
+            margin: 0 auto;
+            // justify-content: center;
+        }
+    }
+    .gif-img{
+        margin-top: 4%;
+    }
+    
+}

@@ -7,17 +7,24 @@ h4{
     margin-top: 1%;
 
 }
+
 .Variants{
     display: flex;
     justify-content: center;
+    margin-top:3%;
+    .img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6%;
+        margin-bottom: 4%;
+    }
     .Types{
-        border:2px solid red;
         width: 23%;
         border-radius: 2em;
         margin: 2%;
         text-align: center;
         color: white;
-        background-color: #161694;
+        background-image: linear-gradient(rgb(92, 92, 219),blue);
     }
     p{
         font-size: 3em;

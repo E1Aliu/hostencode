@@ -12,9 +12,7 @@ const Customize=()=>{
                 {Costum.map((props)=>{
                     return(
                         <div className="Types">
-                            <p className="Icon">
-                            {props.icone}
-                            </p>
+                            <div className="img" style={{content:`url(${props.icone})`}}></div>
                             <h2>{props.title}</h2>
                             <h4>{props.describe}</h4>
                         </div>
